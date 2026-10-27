@@ -1,0 +1,15 @@
+{
+  "name": "saavn-music-web",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy:workers": "vite build && wrangler deploy",
+    "deploy:pages": "vite build && wrangler pages deploy dist --project-name saavn-music-web"
+  },
+  "dependencies": { "react": "^18.3.1", "react-dom": "^18.3.1", "react-router-dom": "^6.26.2" },
+  "devDependencies": { "@vitejs/plugin-react": "^4.3.1", "vite": "^5.4.8", "wrangler": "^3.80.0" }
+}
